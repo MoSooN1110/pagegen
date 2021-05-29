@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+    <!-- generate data: **gen_date** -->
+
+<title>MoSooN-**page_name**</title>
+<script type="text/javascript" src="/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.ajaxSetup({cache:false});
+	$("div.include").load("**file_name**");
+});
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.header").load("/template/header.html");
+    });
+    </script>
+
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.body_1").load("/template/body_1.html");
+    });
+    </script>
+
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.body_2").load("/template/body_2.html");
+    });
+    </script>
+
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.body_3").load("/template/body_3.html");
+    });
+    </script>
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.footer").load("/template/footer.html");
+    });
+    </script>
+
+
+<script type="text/javascript">
+    $(function(){
+        $.ajaxSetup({cache:false});
+        $("div.body_left").load("/template/body_left.html");
+    });
+    </script>
+
+    <div class="header"></div>
+
+</head>
+
+<body>
+    <div class="tm-container">        
+        <div>
+
+
+            <div class="body_1"></div>
+            
+            <div class="tm-row">
+                <div class="tm-col-left">
+                    <div class="body_left"></div>
+            
+                </div>
+                <main class="tm-col-right">
+                    <section class="tm-content">
+                        <div class="include"></div>
+                        <!-- <p><iframe class="embed-card embed-webcard" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" title="D - Nearest Card Game" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fatcoder.jp%2Fcontests%2Faising2019%2Ftasks%2Faising2019_d" frameborder="0" scrolling="no"></iframe><cite class="hatena-citation"><a href="https://atcoder.jp/contests/aising2019/tasks/aising2019_d">atcoder.jp</a></cite></p> -->
+                    </section>
+                </main>
+            </div>
+        </div> 
+            <!-- <div class="body_2"></div> -->
+        <!-- <div class="body_2"></div> -->
+
+    <!-- </div> -->
+    <div class="tm-bg">
+        <div class="tm-bg-left"></div>
+        <div class="tm-bg-right"></div>
+    </div>
+    <div class="tm-col-right tm-col-footer">
+        <footer class="tm-site-footer text-right">
+            <div class="footer"></div>
+        </footer>
+    </div>  
+    
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <!-- <script src="js/templatemo-script.js"></script> -->
+</body>
+
+</html>
