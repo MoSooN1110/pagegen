@@ -73,9 +73,9 @@ def main_proc():
 
     print("process >> "+file_str)
     doc_pre_proc(file_str)
-
+    template_file_path = sys.argv[2]
     subprocess.call(["pandoc", "tmp.md", "-o", file_str+"_main.html"])
-    subprocess.call(["cp", "../src/doc_template.html" , file_str+".html"])
+    subprocess.call(["cp", template_file_path , file_str+".html"])
     
     template_proc(file_str)
     doc_proc(file_str)
