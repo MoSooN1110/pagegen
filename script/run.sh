@@ -1,1 +1,1 @@
- python ../src/page_gen.py $1
+ python3 ../src/page_gen.py $1
