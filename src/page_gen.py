@@ -75,7 +75,7 @@ def main_proc():
     doc_pre_proc(file_str)
 
     subprocess.call(["pandoc", "tmp.md", "-o", file_str+"_main.html"])
-    subprocess.call(["cp", "/home/mosoon/Documents/page_gen/doc_template.html" , file_str+".html"])
+    subprocess.call(["cp", "doc_template.html" , file_str+".html"])
     
     template_proc(file_str)
     doc_proc(file_str)
