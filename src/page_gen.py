@@ -90,7 +90,7 @@ def data_mege(file_str):
             #     file.write(filedata1[idx:])
             
     # ファイルに書き込む
-    print(filedata)
+    # print(filedata)
     with open(file_name_html1,"w",encoding="utf-8") as file:
         file.write(filedata)
 
@@ -112,8 +112,10 @@ def main_proc():
     doc_proc(file_str)
     data_mege(file_str)
     
-    subprocess.call(["mv",file_str+"_main.html","output/"+file_str+"_main.html"])
-    subprocess.call(["mv",file_str+".html","output/"+file_str+".html"])
+    subprocess.call(["rm",file_str+"_data.html"])
+    # subprocess.call(["mv",file_str+".html","output/"+file_str+".html"])
+    subprocess.call(["rm","tmp.md"])
+    print("successfuly generated >"+file_str+".html" )
 
     
 
